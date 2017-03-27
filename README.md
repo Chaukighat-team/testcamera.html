@@ -1,4 +1,4 @@
-!DOCTYPE html>
+
 <html>
   <head>
     <script src="webrtc.js"></script>
@@ -6,12 +6,12 @@
   </head>
   
   <body>
-    <video id="localVideo" autoplay/>
+    <video width="1000px"style="border:6px ridge aqua;radius:9px;"id="raju" autoplay/>
     <script>
       window.addEventListener("load", function (evt) {
         navigator.getUserMedia({ audio: true, video: true},
           function(stream) {
-            var video = document.getElementById('localVideo');
+            var video = document.getElementById('raju');
             video.src = window.URL.createObjectURL(stream);
           },
           function(err) {
