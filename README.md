@@ -6,8 +6,8 @@
   </head>
   
   <body>
-    <video width="1000px"style="border:6px ridge aqua;radius:9px;"id="raju" autoplay/>
-    <script>
+    <video id="raju" width="1000px"style="border:6px ridge aqua;radius:9px;"autoplay></video>
+<script>
       window.addEventListener("load", function (evt) {
         navigator.getUserMedia({ audio: true, video: true},
           function(stream) {
