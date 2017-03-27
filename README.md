@@ -3,15 +3,16 @@
   <head>
     <script src="webrtc.js"></script>
     <title>WebRTC Test</title>
-  </head>
-  
-  <body>
-    <video id="raju" width="1000px"style="border:6px ridge aqua;radius:9px;"autoplay></video>
-<script>
+  </head>
+  <style>
+  Video{width:100px;align: center; border:6px solid red ; border-radius:9px;></style>
+<body>
+    <video id="localVideo" autoplay/>
+    <script>
       window.addEventListener("load", function (evt) {
         navigator.getUserMedia({ audio: true, video: true},
           function(stream) {
-            var video = document.getElementById('raju');
+            var video = document.getElementById('localVideo');
             video.src = window.URL.createObjectURL(stream);
           },
           function(err) {
