@@ -5,7 +5,7 @@
     <title>WebRTC Test</title>
   </head>
   <style>
-  Video{width:100px;align: center; border:6px solid red ; border-radius:9px;></style>
+ # localVideo{width:1000px;align: center; border:6px solid red ; border-radius:9px;></style>
 <body>
     <video id="localVideo" autoplay/>
     <script>
